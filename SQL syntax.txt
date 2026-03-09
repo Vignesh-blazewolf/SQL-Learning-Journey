@@ -1,0 +1,308 @@
+SQL (Structured Query Language) is used for managing and manipulating relational databases. The syntax of SQL can be quite comprehensive, covering various operations like querying, updating, inserting, and deleting data. Below is an overview of common SQL commands along with examples to illustrate their usage.
+1. SELECT Statement
+Used to retrieve data from one or more tables.
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition
+ORDER BY column
+LIMIT number;
+Example:
+SELECT first_name, last_name
+FROM employees
+WHERE department = 'Sales'
+ORDER BY last_name
+LIMIT 10;
+2. INSERT INTO Statement
+Used to insert new records into a table.
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+Example:
+INSERT INTO employees (first_name, last_name, department, hire_date)
+VALUES ('John', 'Doe', 'Sales', '2024-08-27');
+3. UPDATE Statement
+Used to modify existing records.
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+Example:
+UPDATE employees
+SET department = 'Marketing'
+WHERE last_name = 'Doe';
+4. DELETE Statement
+Used to delete records from a table.
+DELETE FROM table_name
+WHERE condition;
+Example:
+DELETE FROM employees
+WHERE last_name = 'Doe';
+5. CREATE TABLE Statement
+Used to create a new table in the database.
+CREATE TABLE table_name (
+    column1 datatype constraints,
+    column2 datatype constraints,
+    ...
+);
+Example:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    hire_date DATE
+);
+6. ALTER TABLE Statement
+Used to modify an existing table structure.
+ALTER TABLE table_name
+ADD column_name datatype;
+Example:
+ALTER TABLE employees
+ADD email VARCHAR(100);
+7. DROP TABLE Statement
+Used to delete an entire table and its data.
+DROP TABLE table_name;
+Example:
+DROP TABLE employees;
+8. CREATE INDEX Statement
+Used to create an index on a table (improves query performance).
+CREATE INDEX index_name
+ON table_name (column_name);
+Example:
+CREATE INDEX idx_last_name
+ON employees (last_name);
+9. JOIN Operations
+Used to combine rows from two or more tables based on a related column.
+INNER JOIN:
+SELECT columns
+FROM table1
+INNER JOIN table2 ON table1.common_column = table2.common_column;
+INNER JOIN table3 ON table1.common_column = table2.common_column;
+
+INNER JOIN table4 ON table1.common_column = table2.common_column;
+
+Example:
+SELECT employees.first_name, employees.last_name, departments.department_name
+FROM employees
+INNER JOIN departments
+ON employees.department = departments.department_id;
+LEFT JOIN:
+SELECT columns
+FROM table1
+LEFT JOIN table2
+ON table1.common_column = table2.common_column;
+Example:
+SELECT employees.first_name, employees.last_name, departments.department_name
+FROM employees
+LEFT JOIN departments
+ON employees.department = departments.department_id;
+10. GROUP BY Statement
+Used to group rows that have the same values into summary rows.
+SELECT column1, aggregate_function(column2)
+FROM table_name
+GROUP BY column1;
+Example:
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY department;
+11. HAVING Clause
+Used to filter groups of rows based on aggregate functions.
+SELECT column1, aggregate_function(column2)
+FROM table_name
+GROUP BY column1
+HAVING aggregate_function(column2) condition;
+Example:
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 5;
+12. ORDER BY Clause
+Used to sort the result set.
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1 [ASC|DESC];
+Example:
+SELECT first_name, last_name
+FROM employees
+ORDER BY last_name ASC;
+These are the core components of SQL syntax. Depending on the database system you are using (like MySQL, PostgreSQL, SQL Server, etc.), there might be some variations or additional features.
+Certainly! Beyond the basics, SQL includes several more advanced syntax features and functionalities. Here’s a deeper dive into some additional SQL syntax and examples:
+13. Subqueries
+A subquery is a query within another query. It can be used in SELECT, INSERT, UPDATE, and DELETE statements.
+In SELECT:
+SELECT column1, column2
+FROM table_name
+WHERE column1 = (SELECT column1 FROM other_table WHERE condition);
+Example:
+SELECT first_name, last_name
+FROM employees
+WHERE department_id = (SELECT department_id FROM departments WHERE department_name = 'Sales');
+In FROM:
+SELECT column1, column2
+FROM (SELECT column1, column2 FROM table_name WHERE condition) AS subquery
+WHERE condition;
+Example:
+SELECT *
+FROM (SELECT first_name, last_name FROM employees WHERE department = 'Sales') AS sales_employees
+WHERE last_name LIKE 'S%';
+14. UNION and UNION ALL
+Used to combine the results of two or more SELECT queries.
+UNION:
+Combines results and removes duplicates.
+SELECT column1 FROM table1
+UNION
+SELECT column1 FROM table2;
+UNION ALL:
+Combines results including duplicates.
+SELECT column1 FROM table1
+UNION ALL
+SELECT column1 FROM table2;
+Example:
+SELECT first_name FROM employees
+WHERE department = 'Sales'
+UNION
+SELECT first_name FROM contractors
+WHERE department = 'Sales';
+15. CASE Statement
+Used for conditional logic in queries.
+SELECT column1,
+       CASE
+           WHEN condition1 THEN result1
+           WHEN condition2 THEN result2
+           ELSE default_result
+       END AS alias_name
+FROM table_name;
+Example:
+SELECT first_name,
+       CASE
+           WHEN salary > 50000 THEN 'High'
+           WHEN salary BETWEEN 30000 AND 50000 THEN 'Medium'
+           ELSE 'Low'
+       END AS salary_bracket
+FROM employees;
+16. COALESCE Function
+Returns the first non-null value from the list of arguments.
+SELECT COALESCE(column1, column2, 'default_value') AS result
+FROM table_name;
+Example:
+SELECT COALESCE(email, 'No email provided') AS contact_email
+FROM employees;
+17. NULL Handling
+IS NULL:
+SELECT column1
+FROM table_name
+WHERE column1 IS NULL;
+IS NOT NULL:
+SELECT column1
+FROM table_name
+WHERE column1 IS NOT NULL;
+Example:
+SELECT first_name
+FROM employees
+WHERE email IS NULL;
+18. DISTINCT
+Used to remove duplicate rows from the result set.
+SELECT DISTINCT column1
+FROM table_name;
+Example:
+SELECT DISTINCT department
+FROM employees;
+19. LIMIT and OFFSET
+Control the number of rows returned by a query and skip a number of rows, respectively.
+LIMIT:
+SELECT column1
+FROM table_name
+LIMIT number;
+OFFSET:
+SELECT column1
+FROM table_name
+OFFSET number;
+Example:
+SELECT first_name
+FROM employees
+ORDER BY last_name
+LIMIT 10 OFFSET 5;
+20. TRANSACTIONS
+BEGIN TRANSACTION:
+Starts a new transaction.
+BEGIN TRANSACTION;
+COMMIT:
+Saves the changes made during the transaction.
+COMMIT;
+ROLLBACK:
+Undoes changes made during the transaction.
+ROLLBACK;
+Example:
+BEGIN TRANSACTION;
+
+UPDATE employees
+SET department = 'HR'
+WHERE department = 'Finance';
+
+-- If everything is correct
+COMMIT;
+
+-- If there was an error
+--ROLLBACK;
+21. Indexes
+DROP INDEX:
+Deletes an index from a table.
+DROP INDEX index_name;
+Example:
+DROP INDEX idx_last_name;
+22. ALTER Table: Modifying Columns
+Change Column Type:
+ALTER TABLE table_name
+ALTER COLUMN column_name TYPE new_data_type;
+Rename Column:
+ALTER TABLE table_name
+RENAME COLUMN old_column_name TO new_column_name;
+Example:
+ALTER TABLE employees
+ALTER COLUMN hire_date TYPE TIMESTAMP;
+
+ALTER TABLE employees
+RENAME COLUMN hire_date TO start_date;
+23. VIEW
+A virtual table based on the result of a query.
+Create View:
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+Example:
+CREATE VIEW sales_employees AS
+SELECT first_name, last_name
+FROM employees
+WHERE department = 'Sales';
+Drop View:
+DROP VIEW view_name;
+Example:
+DROP VIEW sales_employees;
+24. Stored Procedures and Functions
+Used to encapsulate complex logic.
+Create Procedure:
+CREATE PROCEDURE procedure_name AS
+BEGIN
+    -- SQL statements
+END;
+Create Function:
+CREATE FUNCTION function_name (parameters)
+RETURNS return_data_type AS
+BEGIN
+    -- SQL statements
+    RETURN result;
+END;
+Example (Procedure):
+CREATE PROCEDURE GetEmployeeDetails
+AS
+BEGIN
+    SELECT * FROM employees;
+END;
+Example (Function):
+CREATE FUNCTION GetEmployeeCount()
+RETURNS INT AS
+BEGIN
+    DECLARE @count INT;
+    SELECT @count = COUNT(*) FROM employees;
+    RETURN @count;
+END;
+
