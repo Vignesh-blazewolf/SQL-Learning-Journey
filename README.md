@@ -46,6 +46,13 @@ SQL-Practice
 -->Practice **query optimization**
 -->Add data **analysis queries**
 
+-->Added SQL Queries
+-->Added SELECT Queries
+-->Added WHERE Clause
+-->Added Aggregate Functions
+-->Added GROUP BY & HAVING
+-->Added JOINS
+
 **AUTHOR**
 
 **VIGNESHWARAN**
