@@ -57,6 +57,7 @@ SQL-Practice
 --> Learned SELECT statement
 --> Used WHERE condition
 --> Practiced COUNT() function
+--> Created student table and queries
 
 **AUTHOR**
 
