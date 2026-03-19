@@ -54,7 +54,7 @@ SQL-Practice
 -->Added JOINS
 
 **Day 1 Progress**
-  
+--> Learned SELECT statement
 
 **AUTHOR**
 
