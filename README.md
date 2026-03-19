@@ -53,7 +53,7 @@ SQL-Practice
 -->Added GROUP BY & HAVING
 -->Added JOINS
 
-Day 1 Progress
+**Day 1 Progress**
   
 
 **AUTHOR**
