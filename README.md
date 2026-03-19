@@ -55,6 +55,7 @@ SQL-Practice
 
 **Day 1 Progress**
 --> Learned SELECT statement
+--> Used WHERE condition
 
 **AUTHOR**
 
