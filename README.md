@@ -61,6 +61,8 @@ SQL-Practice
 
 **Day 2 Progress**
 --> Learned WHERE clause
+--> Used AND, OR, NOT operators
+
 
 **AUTHOR**
 
