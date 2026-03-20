@@ -63,6 +63,7 @@ SQL-Practice
 --> Learned WHERE clause
 --> Used AND, OR, NOT operators
 --> Practiced BETWEEN and IN
+--> Filtered data based on conditions
 
 
 **AUTHOR**
