@@ -60,6 +60,7 @@ SQL-Practice
 --> Created student table and queries
 
 **Day 2 Progress**
+--> Learned WHERE clause
 
 **AUTHOR**
 
