@@ -59,6 +59,8 @@ SQL-Practice
 --> Practiced COUNT() function
 --> Created student table and queries
 
+**Day 2 Progress**
+
 **AUTHOR**
 
 **VIGNESHWARAN**
