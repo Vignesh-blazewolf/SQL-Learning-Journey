@@ -65,6 +65,8 @@ SQL-Practice
 --> Practiced BETWEEN and IN
 --> Filtered data based on conditions
 
+**Day 3 Progress**
+
 
 **AUTHOR**
 
