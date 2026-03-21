@@ -66,6 +66,7 @@ SQL-Practice
 --> Filtered data based on conditions
 
 **Day 3 Progress**
+--> Learned ORDER BY clause
 
 
 **AUTHOR**
