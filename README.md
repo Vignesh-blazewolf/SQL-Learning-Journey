@@ -69,6 +69,7 @@ SQL-Practice
 --> Learned ORDER BY clause
 --> Sorted data using ASC and DESC
 --> Used LIMIT to get top results
+--> Practiced multi-column sorting
 
 **AUTHOR**
 
