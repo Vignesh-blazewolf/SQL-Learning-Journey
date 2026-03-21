@@ -67,7 +67,7 @@ SQL-Practice
 
 **Day 3 Progress**
 --> Learned ORDER BY clause
-
+--> Sorted data using ASC and DESC
 
 **AUTHOR**
 
