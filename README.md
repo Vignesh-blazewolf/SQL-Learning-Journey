@@ -68,6 +68,7 @@ SQL-Practice
 **Day 3 Progress**
 --> Learned ORDER BY clause
 --> Sorted data using ASC and DESC
+--> Used LIMIT to get top results
 
 **AUTHOR**
 
