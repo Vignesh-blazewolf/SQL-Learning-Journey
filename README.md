@@ -72,6 +72,7 @@ SQL-Practice
 --> Practiced multi-column sorting
 
 **Day 4 Progress**
+--> Learned GROUP BY clause
 
 **AUTHOR**
 
