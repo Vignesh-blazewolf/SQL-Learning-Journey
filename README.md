@@ -73,6 +73,8 @@ SQL-Practice
 
 **Day 4 Progress**
 --> Learned GROUP BY clause
+--> Used COUNT, AVG, SUM, MAX, MIN
+
 
 **AUTHOR**
 
