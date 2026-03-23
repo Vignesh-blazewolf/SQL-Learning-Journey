@@ -78,6 +78,7 @@ SQL-Practice
 
 **Day 5 Progress**
 --> Learned HAVING clause
+--> Understood WHERE vs HAVING
 
 
 **AUTHOR**
