@@ -84,6 +84,7 @@ SQL-Practice
 **Day 6 Progress**
 --> Mastered aggregate functions
 --> Applied GROUP BY with real dataset
+-->  Used HAVING for filtering results
 
 
 
