@@ -76,6 +76,11 @@ SQL-Practice
 --> Used COUNT, AVG, SUM, MAX, MIN
 --> Performed city-wise data analysis
 
+**Day 5 Progress**
+--> Learned HAVING clause
+--> Understood WHERE vs HAVING
+--> Filtered grouped data using conditions
+
 
 **AUTHOR**
 
