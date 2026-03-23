@@ -81,6 +81,9 @@ SQL-Practice
 --> Understood WHERE vs HAVING
 --> Filtered grouped data using conditions
 
+**Day 6 Progress**
+--> Mastered aggregate functions
+
 
 **AUTHOR**
 
