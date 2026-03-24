@@ -92,6 +92,7 @@ SQL-Practice
 
 **Day 8 Progress**
 --> Learned INNER JOIN
+--> Combined multiple tables
 
 
 **AUTHOR**
