@@ -87,6 +87,8 @@ SQL-Practice
 --> Used HAVING for filtering results
 --> Performed department-wise analysis
 
+**Day 7 Progress**
+
 
 
 **AUTHOR**
