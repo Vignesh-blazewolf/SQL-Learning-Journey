@@ -96,7 +96,7 @@ SQL-Practice
 --> Combined multiple tables
 
 **Day 9 Progress**
-
+--> Learned LEFT JOIN
 
 **AUTHOR**
 
