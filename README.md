@@ -98,6 +98,7 @@ SQL-Practice
 **Day 9 Progress**
 --> Learned LEFT JOIN
 --> Understood NULL handling
+--> Added queries for unmatched records
 
 **AUTHOR**
 
