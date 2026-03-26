@@ -103,6 +103,7 @@ SQL-Practice
 **Day 10 Progress**
 --> Learned RIGHT JOIN
 --> Compared LEFT vs RIGHT JOIN
+-->  Completed JOIN fundamentals
 
 **AUTHOR**
 
