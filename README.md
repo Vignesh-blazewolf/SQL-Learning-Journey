@@ -100,6 +100,8 @@ SQL-Practice
 --> Understood NULL handling
 --> Added queries for unmatched records
 
+**Day 10 Progress**
+
 **AUTHOR**
 
 **VIGNESHWARAN**
