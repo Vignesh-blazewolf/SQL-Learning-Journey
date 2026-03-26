@@ -79,7 +79,7 @@ SQL-Practice
 **Day 5 Progress**
 --> Learned HAVING clause
 --> Understood WHERE vs HAVING
---> Filtered grouped data using conditions
+--> Filtered grouped data using conditions- Learned RIGHT JOIN****
 
 **Day 6 Progress**
 --> Mastered aggregate functions
@@ -101,6 +101,7 @@ SQL-Practice
 --> Added queries for unmatched records
 
 **Day 10 Progress**
+--> Learned RIGHT JOIN
 
 **AUTHOR**
 
