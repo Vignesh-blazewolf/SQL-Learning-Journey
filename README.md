@@ -105,6 +105,8 @@ SQL-Practice
 --> Compared LEFT vs RIGHT JOIN
 -->  Completed JOIN fundamentals
 
+**Day 11 Progress**
+
 **AUTHOR**
 
 **VIGNESHWARAN**
