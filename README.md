@@ -106,6 +106,7 @@ SQL-Practice
 -->  Completed JOIN fundamentals
 
 **Day 11 Progress**
+--> Learned subqueries
 
 **AUTHOR**
 
