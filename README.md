@@ -108,6 +108,7 @@ SQL-Practice
 **Day 11 Progress**
 --> Learned subqueries
 --> Used nested queries for filtering
+--> Applied real-world salary analysis
 
 **AUTHOR**
 
