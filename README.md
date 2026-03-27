@@ -107,6 +107,7 @@ SQL-Practice
 
 **Day 11 Progress**
 --> Learned subqueries
+--> Used nested queries for filtering
 
 **AUTHOR**
 
