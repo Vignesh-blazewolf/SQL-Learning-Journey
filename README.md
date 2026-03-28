@@ -111,6 +111,7 @@ SQL-Practice
 --> Applied real-world salary analysis
 
 **Day 12 Progress**
+--> Learned SQL Views
 
 **AUTHOR**
 
