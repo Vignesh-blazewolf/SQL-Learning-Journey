@@ -110,6 +110,8 @@ SQL-Practice
 --> Used nested queries for filtering
 --> Applied real-world salary analysis
 
+**Day 12 Progress**
+
 **AUTHOR**
 
 **VIGNESHWARAN**
