@@ -112,6 +112,7 @@ SQL-Practice
 
 **Day 12 Progress**
 --> Learned SQL Views
+--> Created reusable queries
 
 **AUTHOR**
 
