@@ -113,6 +113,7 @@ SQL-Practice
 **Day 12 Progress**
 --> Learned SQL Views
 --> Created reusable queries
+--> Simplified complex SQL operations
 
 **AUTHOR**
 
