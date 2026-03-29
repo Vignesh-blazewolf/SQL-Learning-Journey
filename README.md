@@ -116,6 +116,7 @@ SQL-Practice
 --> Simplified complex SQL operations
 
 **Day 13 Progress**
+--> Learned SQL Indexes
 
 **AUTHOR**
 
