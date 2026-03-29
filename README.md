@@ -118,6 +118,7 @@ SQL-Practice
 **Day 13 Progress**
 --> Learned SQL Indexes
 --> Improved query performance
+--> Understood optimization techniques
 
 **AUTHOR**
 
