@@ -115,6 +115,8 @@ SQL-Practice
 --> Created reusable queries
 --> Simplified complex SQL operations
 
+**Day 13 Progress**
+
 **AUTHOR**
 
 **VIGNESHWARAN**
